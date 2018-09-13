@@ -34,16 +34,32 @@
             <h2>Add a Transit Route</h2>
         </div>
         <div class="row">
-            <form action="#" method="post" class="add-route">
+
+
+            <!-- ---------BASIC FORM STRUCTURE FOR ADDING A ROUTE -------- -->
+            <form id="route-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Route Name</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Route name" required>
+                        <input type="text" name="route-name" id="nroute-ame" placeholder="Route name" required />
                     </div>
+                    <input type="submit" value="Add Route" class="btn" />
                 </div>
-                <div class="row">
+
+
+                <!-- 
+                <form action="#" method="post" class="add-route">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Route Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Route name" required>
+                        </div>
+                    </div> -->
+                <!-- <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Company Name</label>
                     </div>
@@ -96,7 +112,7 @@
                     </div>
                     <div class="col span-2-of-3">
                         <input type="submit" value="Submit">
-                    </div>
+                    </div> -->
             </form>
         </div>
     </section class>
