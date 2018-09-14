@@ -14,3 +14,22 @@ function addRoute(e) {
     alert("Add a Route");
   }
 }
+
+// Create likst item when adding a route
+const li = document.createElement("li");
+li.className = "collection-item";
+// Create text node and append to li
+li.appendChild(document.createTextNode(routeInput.value));
+
+li.appendChild(link);
+
+storeRouteInLocalStorage(routeInput.value);
+
+function storeRouteInLocalStorage(route) {
+  let routes;
+  if (localStorage.getItem("routes") === null) {
+    routes = [];
+  }
+  routes.push(route);
+  localStorage.getItem("routes", JSON.stringify(routes));
+}
